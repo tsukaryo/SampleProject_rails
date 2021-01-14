@@ -1,0 +1,4 @@
+<h1><%= @user.name  %>さん</h1>
+<p>認証が完了しました</p>
+
+<%=link_to('認証はこちら',"http://localhost:3000/users/#{@user.id}/authenticate") %>

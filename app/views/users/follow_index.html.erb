@@ -1,0 +1,11 @@
+
+<h1>フォロー一覧</h1>
+<ul class="list-group" style="max-width: 400px; margin: auto;">
+  
+<% @follow_users.each do |follow| %>
+<div>
+  <p><%= follow.name %></p>
+  <%= link_to('詳細' , "/users/#{follow.id}/detail") %>
+  <%= link_to('フォローやめる' , "/users/#{follow.id}/quit", method: :post) %>
+  </div>
+<%end%>

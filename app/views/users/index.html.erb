@@ -1,0 +1,16 @@
+<% @users.each do |user| %>
+<div class="list-group-item list-group-item-action b">
+<p>ユーザーネーム</p>
+<p><%=user.name %></p>
+<%= link_to('フォローする',"/users/#{user.id}/follow",method: :post) %>
+<%= link_to('詳細',"/users/#{}/detail")%>
+</div>
+<% end %>
+
+<style>
+.b{
+    width:100%;
+    margin:auto;
+    text-align:center;
+}
+</style>

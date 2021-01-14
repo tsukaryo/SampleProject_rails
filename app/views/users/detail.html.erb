@@ -1,0 +1,9 @@
+<h1><%= @follow_user.name %>のツイート一覧</h1>
+
+<% @posts.each do |post|  %>
+<div class="list-group-item list-group-item-action a">
+<h3><%=post.content %></h3>
+<p><%= post.created_at %>
+</div>
+
+<% end %>

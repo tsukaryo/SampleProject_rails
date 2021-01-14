@@ -1,0 +1,17 @@
+<h1>ホーム画面</h1>
+<% i=0 %>
+<% @posts.each do |post|  %>
+<div class="list-group-item list-group-item-action c">
+<p><%= @tweet_user_name_array[i] %>のツイート</p>
+<h3><%= post.content %></h3>
+<p><%= post.created_at %></p
+<% i=i+1 %>>
+</div>
+<% end %>
+
+<style>
+.c{
+    text-align:center;
+
+}
+</style>

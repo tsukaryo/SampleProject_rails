@@ -1,0 +1,18 @@
+<h1>ツイート一覧</h1>
+<% @posts.each do |post| %>
+<div class="list-group-item list-group-item-action a">
+<p>ツイート内容</p>
+  <h3><%= post.content %></h3>
+  <p>作成日時</p>
+  <p><%= post.created_at %></p>
+  <%= link_to('編集',"/posts/#{post.id}/edit") %>
+  <%= link_to('削除',"/posts/#{post.id}/delete", method: :post )%>
+  </div>
+<% end %>
+
+<style>
+.a{
+  width:100%;
+  margin:auto;
+}
+</style>

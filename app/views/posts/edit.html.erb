@@ -1,0 +1,8 @@
+<%= form_tag("/posts/#{@post.id}/update") do%>
+
+<input name=content class="form-control" value=<%=@post.content %>>
+
+<input button class="btn btn-lg btn-primary btn-block" type="submit"></button>
+
+
+<% end %>
