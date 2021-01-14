@@ -22,4 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# SampleProject_rails
+## ツイッターの機能を真似たアプリを作成しました。一から機能とページ遷移を決めて作成しました。
